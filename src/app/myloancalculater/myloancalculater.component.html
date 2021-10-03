@@ -1,0 +1,107 @@
+
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-3">
+
+          </div>
+          <div class="col-md-6">
+              <mat-card>
+                <div class="hhh">
+                  <img src="/assets/E&Mtech.jpg" alt="e&m logo" height="140px" width="90px" class="logo">
+            <h1 class="h" ><p> LOAN CALCULATOR</p></h1>
+          </div>
+            <mat-card>
+              <form 
+                class="form"
+                [formGroup]="myForm"
+                (ngSubmit)="submitData()"
+                #resetRequestsForm="ngForm"
+                novalidate
+              >
+              <div class="row">
+              <div class="col-md-6 col-sm-12">
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp; &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+               <mat-form-field appearance="fill">
+                    <mat-label>amount borrowed</mat-label>
+                    <input matInput placeholder="enter amount borrowed" formControlName="principal" required>
+                </mat-form-field><br/>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <mat-form-field appearance="fill">
+                     <mat-label>interest</mat-label>
+                     <input matInput placeholder="Enter interest" formControlName="interest" required>
+                 </mat-form-field><br/>
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 <mat-form-field appearance="fill">
+                  <mat-label>number of months</mat-label>
+                  <input matInput placeholder="Enter number of months" formControlName="period" required>
+              </mat-form-field>
+              </div>
+
+                <br />
+                &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                </div>
+                 <div class="btn">
+                <button  mat-raised-button color="primary" type="submit">
+                 
+                  Calculate
+                </button>
+                &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+              <button   mat-raised-button color="primary" type="reset">Reset</button>
+              </div>
+
+            </form>
+            </mat-card>
+
+
+            </mat-card>            
+        
+          
+          
+      </div>
+    </div>
+
+  </div>
+  
