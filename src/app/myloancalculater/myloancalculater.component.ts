@@ -55,9 +55,9 @@ export class MyloancalculaterComponent implements OnInit {
    console.log("total interest =", this.n)
 
   }
-
 }
 function pow(a: number, t: any) {
   throw new Error('Function not implemented.');
 }
+
 
